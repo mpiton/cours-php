@@ -5,7 +5,8 @@ require("outils.php");
 
 // VARIABLES
 $recup = $_GET["multi"];
-$a = 1;
+$a = 0;
+$tableau = tableMulti($recup);
 
 ?>
 
@@ -16,11 +17,20 @@ $a = 1;
 
 <?php
 
-// RESULTAT
+echo $tableau;
+echo "<br>";
 
-echo "<table>";
-echo tableMulti($recup, $a);
-echo "</table>";
+
+
+while ($a < 10) {
+
+ echo "<h1 class='content is-large'>Table de multiplication du chiffre" . ($a + 1)  .  "</h1>";
+ echo tableMulti(1 + $a);
+ $a++;
+}
+
+
+
 
 
 ?>

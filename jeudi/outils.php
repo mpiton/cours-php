@@ -28,15 +28,22 @@ function showResult($monChoix, $CompChoose) {
 }
 
 
-// FONCTION TABLE MULTIPLICATION
+// FONCTION TABLE MULTIPLICATION AVEC INPUT
+
 function tableMulti($recup) {
    $a = 0;
+   $retour = "<table border=2>";
    while ($a < 10) {
-      $a++;
       $resultat = $recup * $a;
-      echo "<tr><td>" . $recup . "</td> <td>" . "x" . "</td> <td>" . $a . "</td> <td>" . "=" . "</td> <td>" . $resultat . "</td></tr>"; 
+      $retour = $retour . "<tr><td>" . $recup . "</td>";
+      $retour = $retour . "<td>" . $a . "</td>";
+      $retour = $retour . "<td>" . $resultat . "</td>";
+      $a++;
    }
+   $retour = $retour . "</table>";
+   return $retour;
 }
+
 
 
 ?>

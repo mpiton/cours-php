@@ -11,3 +11,9 @@
 .pierre, .feuille, .ciseaux {
  flex: 1 1 25%;
 }
+td {
+   padding: 1em;
+}
+table {
+   margin: 0 auto;
+}
