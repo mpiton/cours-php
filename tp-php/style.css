@@ -1,0 +1,33 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   background: rgb(2,0,36);
+background: linear-gradient(190deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(3,143,210,1) 65%, rgba(2,162,222,1) 89%, rgba(0,212,255,1) 100%);
+background-repeat: no-repeat;
+height: 100vh;
+}
+form {
+  
+   width: 50%;
+    margin: 0 auto;
+    background-color: lightblue;
+    padding: 20px;
+    
+}
+.resultat {
+   width: 50%;
+   margin: 0 auto;
+   background-color: lightblue;
+}
+td {
+   padding: 1em;
+   border: 2px solid #eee;
+}
+table {
+   margin: 0 auto;
+   border-collapse: collapse;
+   border: 2px solid #eee;
+}
